@@ -117,6 +117,9 @@ img{
         li{
             position: relative;
             padding-left: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            
         }
         
         span.descr{
@@ -200,4 +203,16 @@ img{
         margin: 0;
         border-radius: 0;
     }
+}
+
+@media screen and (max-width: 435px){
+    .description, 
+    .preparation-time, 
+    .ingridients,
+    .instructions,
+    .line-1,
+    .nutrition{
+        width: 18em;
+    }
+
 }
