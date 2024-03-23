@@ -5,7 +5,7 @@ This project informs the user how to make one of the easiest dishes.
 
 ## How To Run The Project
 
-Before starting the project, make sure that you've installed the required fonts from the **fonts** folder.
+Before starting the project, make sure that you've installed the required fonts from the **assets/fonts** folder.
 
 To view the project, download the files in this repository, and open index.html.
 
