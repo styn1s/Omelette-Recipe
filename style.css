@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 body{
     margin: 0;
+}
+
+h1, h2, h3{
+    font-family: "Young Serif";
+}
+
+p, ul, ol, .nutr-name, .nutr-value{
+    font-family: "Outfit";
 }
 
 img{
@@ -14,21 +23,18 @@ img{
 .description {
     margin-left: auto;
     margin-right: auto;
-    width: 42.5em;
+    width: 42.5em; 
+}
 
-    p{
-        font-family: "Outfit";
-        color: rgb(97, 96, 96);
-        line-height: 1.6;
-        margin-bottom: 3em;
-    }
+.description p{
+    color: rgb(97, 96, 96);
+    line-height: 1.6;
+    margin-bottom: 3em;
+}
 
-    h1{
-        font-family: "Young Serif";
-        font-size: 2.5em;
-        font-weight: 400;
-    }
-    
+.description h1{
+    font-size: 2.5em;
+    font-weight: 400;
 }
 
 .preparation-time{
@@ -37,143 +43,125 @@ img{
     width: 42.5em;
     background-color: hsl(330, 100%, 98%);
     border-radius: 1em;
+}
 
-    h3{
-        font-family: 'Outfit';
-        color: hsl(332, 51%, 32%);
-        padding: 1em 1.5em 0 1.5em;
-    }
+.preparation-time h3{
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+    padding: 1em 1.5em 0 1.5em;
+}
 
-    ul.cook-time{
-        font-family: 'Outfit';
-        padding: 0 0 1.5em 3.5em;
-        line-height: 2em;
-        color: rgb(97, 96, 96);
+ul.cook-time{
+    padding: 0 0 1.5em 3.5em;
+    line-height: 2em;
+    color: rgb(97, 96, 96);
+}
 
-        li{
-            padding-left: 1em;
+ul.cook-time li{
+    padding-left: 1em;
+}
 
-            span{
-                font-weight: bold;
-
-            }
-        }
-    }
+ul.cook-time span{
+    font-weight: bold;
 }
 
 .ingridients{
     margin-left: auto;
     margin-right: auto;
     width: 42.5em;
+}
 
-    h2{
-        font-family: 'Young Serif';
-        color: hsl(14, 45%, 36%);
-        font-weight: 500;
-        font-size: 2em;
-        margin-bottom: 0;
-    }
+.ingridients h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 0;
+}
 
-    ul.groceries{
-        font-family: 'Outfit';
-        padding: 0 0 1.5em 1.7em;
-        line-height: 2em;
-        color: rgb(97, 96, 96);
+ul.groceries{
+    padding: 0 0 1.5em 1.7em;
+    line-height: 2em;
+    color: rgb(97, 96, 96);
+}
 
-        li{
-            padding-left: 1.5em;
-        }
-    }
+ul.groceries li{
+    padding-left: 1.5em;
 }
 
 .line-1{
     margin: 0 auto;
     width: 42.5em;
-
-    hr{
-        color: white;
-    }
 }
 
 .instructions{
     margin: 0 auto;
     width: 42.5em;
+}
 
-    h2{
-        font-family: 'Young Serif';
-        color: hsl(14, 45%, 36%);
-        font-weight: 500;
-        font-size: 2em;
-    }
+.instructions h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 2em;
+}
 
-    ol{
-        font-family: 'Outfit';
-        line-height: 2em;
-        padding-left: 30px;
-        font-weight: bold;
-        color: rgb(97, 96, 96);
-        margin-bottom: 40px;
+ol{
+    line-height: 2em;
+    padding-left: 30px;
+    font-weight: bold;
+    color: rgb(97, 96, 96);
+    margin-bottom: 40px;
+}
 
-        li{
-            position: relative;
-            padding-left: 20px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            
-        }
-        
-        span.descr{
-            font-weight: 400;
-        }
+ol li{
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-    }
-
+ol li span.descr{
+    font-weight: 400;
 }
 
 .nutrition{
     margin: 0 auto;
     width: 42.5em;
     position: relative;
+}
 
-    h2{
-        font-family: 'Young Serif';
-        color: hsl(14, 45%, 36%);
-        font-weight: 500;
-        font-size: 2em;
-    }
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 2em;
+}
 
-    p{
-        font-family: 'Outfit'; 
-        color:rgb(97, 96, 96);
-    }
+.nutrition p{
+    color:rgb(97, 96, 96);
+}
 
-    #nutrition-table{
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 5em;
+#nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5em;  
+}
 
-        .nutr-name, .nutr-value{
-            font-family: Outfit;
-            padding: 15px 0;
-            border-bottom: 1px solid lightgray;
-        }
+.nutr-name, .nutr-value{
+    padding: 15px 0;
+    border-bottom: 1px solid lightgray;
+}
 
-        .nutr-name{
-            color: rgb(97, 96, 96);
-            padding-left: 35px;
-        }
+.nutr-name{
+    color: rgb(97, 96, 96);
+    padding-left: 35px;
+}
 
-        .nutr-value{
-            font-weight: bold;
-            color: hsl(14, 45%, 36%);
-        }
+.nutr-value{
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
 
-        tr:hover{
-            background-color: rgb(252, 248, 248);
-        }
-        
-    }
-    
+tr:hover{
+    background-color: rgb(252, 248, 248);
 }
 
 @media only screen and (max-width: 760px){
