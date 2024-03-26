@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 body{
     margin: 0;
+    background-color: hsl(30, 54%, 90%);
 }
 
 h1, h2, h3{
@@ -18,6 +19,15 @@ img{
     width: 42.5em;
     display: block;
     border-radius: 1em;
+}
+
+.container{
+    margin: 100px auto;
+    padding: 10px 0 20px 0;
+    border-radius: 2em;
+    width: 770px;
+    height: auto;
+    background-color: white;
 }
 
 .description {
@@ -142,7 +152,6 @@ ol li span.descr{
 #nutrition-table{
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 5em;  
 }
 
 .nutr-name, .nutr-value{
@@ -164,7 +173,19 @@ tr:hover{
     background-color: rgb(252, 248, 248);
 }
 
-@media only screen and (max-width: 760px){
+tr:last-child td{
+    border-bottom: none;
+}
+
+@media screen and (max-width: 800px){
+    img{
+        margin-top: 1.5em;
+    }
+
+    .container{
+        width: 570px; 
+    }
+
     .description, 
     .preparation-time, 
     .ingridients,
@@ -176,31 +197,52 @@ tr:hover{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
+    .container{
+        width: 480px;
+    }
+
     .description, 
     .preparation-time, 
     .ingridients,
     .instructions,
     .line-1,
-    .nutrition{
-        width: 25em;
-    }
-
+    .nutrition,
     img{
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
+        width: 25em;
     }
 }
 
-@media screen and (max-width: 435px){
+@media screen and (max-width: 500px){
+    html, body{
+        height: 100%;
+    }
+
+    img{
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+
     .description, 
-    .preparation-time, 
+    .preparation-time,
     .ingridients,
     .instructions,
     .line-1,
     .nutrition{
-        width: 18em;
+        width: auto;
+        margin: 50px;
     }
 
+    .nutrition{
+        padding-bottom: 50px;
+    }
 }
