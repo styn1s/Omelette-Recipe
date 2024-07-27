@@ -182,14 +182,6 @@ tr:last-child td{
 }
 
 @media screen and (max-width: 800px){
-    #omelette-pic{
-        margin-top: 1.5em;
-    }
-
-    main{
-        width: 35.625em; 
-    }
-
     #omelette-pic,
     #description, 
     #preparation-time, 
@@ -199,13 +191,17 @@ tr:last-child td{
     #nutrition{
         width: 30em;
     }
+
+    #omelette-pic{
+        margin-top: 1.5em;
+    }
+
+    main{
+        width: 35.625em; 
+    }
 }
 
 @media screen and (max-width: 600px){
-    main{
-        width: 30em;
-    }
-
     #omelette-pic,
     #description, 
     #preparation-time, 
@@ -215,9 +211,23 @@ tr:last-child td{
     #nutrition{
         width: 25em;
     }
+
+    main{
+        width: 30em;
+    }
 }
 
 @media screen and (max-width: 500px){
+    #description, 
+    #preparation-time,
+    #ingredients,
+    #instructions,
+    hr,
+    #nutrition{
+        width: auto;
+        margin: 3.125em;
+    }
+
     #omelette-pic{
         margin: 0;
         border-radius: 0;
@@ -230,16 +240,6 @@ tr:last-child td{
         border-radius: 0;
         width: 100%;
         height: auto;
-    }
-
-    #description, 
-    #preparation-time,
-    #ingredients,
-    #instructions,
-    hr,
-    #nutrition{
-        width: auto;
-        margin: 3.125em;
     }
 
     #nutrition{
