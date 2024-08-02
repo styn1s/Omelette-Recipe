@@ -6,47 +6,48 @@
     <title>Omelette Recipe</title>
     <meta
       name="description"
-      content="A simple and quick omelette recipe that's perfect for any meal. Learn how to make a classic omelette with options for fillings like cheese, vegetables, and meats."
+      content="A simple and quick omelette recipe that's perfect for any meal. 
+              Learn how to make a classic omelette with options for fillings like cheese, vegetables, and meats."
     />
     <meta
       name="keywords"
       content="omelette, recipe, easy recipe, cooking, eggs, breakfast"
     />
     <meta name="author" content="Styn1s" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
     <main>
-      <article>
+      <article aria-labelledby="recipe-title">
         <img
-          id="omelette-pic"
+          class="omelette-pic"
           src="./assets/images/image-omelette.png"
           alt="A delicious omelette on a plate"
           loading="lazy"
         />
-
-        <section id="description">
-          <h1>Simple Omelette Recipe</h1>
+        <section class="description">
+          <h1 id="recipe-title">Simple Omelette Recipe</h1>
           <p>
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </section>
-
-        <section id="preparation-time">
-          <h3>Preparation time</h3>
+        <section class="preparation-time" aria-labelledby="prep-time-heading">
+          <h3 id="prep-time-heading">Preparation time</h3>
           <ul>
             <li><span>Total:</span> Approximately 10 minutes</li>
             <li><span>Preparation:</span> 5 minutes</li>
             <li><span>Cooking:</span> 5 minutes</li>
           </ul>
         </section>
-
-        <section id="ingredients">
-          <h2>Ingredients</h2>
+        <section class="ingredients" aria-labelledby="ingredients-heading">
+          <h2 id="ingredients-heading">Ingredients</h2>
           <ul>
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -57,11 +58,9 @@
             </li>
           </ul>
         </section>
-
         <hr />
-
-        <section id="instructions">
-          <h2>Instructions</h2>
+        <section class="instructions" aria-labelledby="instructions-heading">
+          <h2 id="instructions-heading">Instructions</h2>
           <ol>
             <li>
               Beat the eggs:<span class="descr">
@@ -103,17 +102,14 @@
             </li>
           </ol>
         </section>
-
         <hr />
-
-        <section id="nutrition">
-          <h2>Nutrition</h2>
+        <section class="nutrition" aria-labelledby="nutrition-heading">
+          <h2 id="nutrition-heading">Nutrition</h2>
           <p>
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-
-          <table id="nutrition-table">
+          <table class="nutrition-table" role="table">
             <tr>
               <td class="nutr-name">Calories</td>
               <td class="nutr-value">277kcal</td>
@@ -132,9 +128,7 @@
             </tr>
           </table>
         </section>
-
       </article>
     </main>
-
   </body>
 </html>
