@@ -2,12 +2,14 @@
   --primary-font: "Outfit", "Cambria", sans-serif;
   --secondary-font: "Young Serif", "Cambria", sans-serif;
   --background-color: hsl(30, 54%, 90%);
-  --light-color: white;
+  --light-color: hsl(0, 0%, 100%);
+  --lightgray-color: hsl(0, 0%, 83%);
+  --recipe-title-color: hsl(24, 5%, 18%);
   --heading-color: hsl(14, 45%, 36%);
-  --text-color: rgb(97, 96, 96);
-  --border-radius: 1rem;
-  --main-width: 48.125rem;
-  --mobile-width: 25rem;
+  --time-color: hsl(332, 51%, 32%);
+  --time-bg-color: hsl(330, 100%, 98%);
+  --text-color: hsl(0, 1%, 38%);
+  --row-hover-color: hsl(36, 70%, 91%);
 }
 
 html,
@@ -18,65 +20,78 @@ body {
   background-color: var(--background-color);
 }
 
-img, section, hr {
+.instructions__item,
+.recipe__nutrition {
+  position: relative;
+}
+
+section,
+.recipe__image,
+.recipe__divider {
   width: 42.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 1rem;
 }
 
-section p,
-section ul,
-section ol,
-.nutr-name {
-  color: var(--text-color);
+.recipe__title,
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+  font-family: var(--secondary-font);
 }
 
-section h2 {
+.time__label,
+.instructions__list,
+.nutrition__value {
+  font-weight: bold;
+}
+
+.recipe__title,
+.instructions__item-description {
+  font-weight: 400;
+}
+
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
   font-weight: 500;
   font-size: 2rem;
   color: var(--heading-color);
 }
 
-.preparation-time ul span,
-.instructions ol,
-.nutr-value {
-  font-weight: bold;
+.recipe__description,
+.time__list,
+.ingredients__list,
+.instructions__list,
+.nutrition__text,
+.nutrition__name {
+  color: var(--text-color);
 }
 
-.preparation-time ul,
-.ingredients ul,
-.instructions ol {
+.time__list,
+.ingredients__list,
+.instructions__list {
   line-height: 2rem;
 }
 
-.description,
-.preparation-time,
-.ingredients {
-  margin: auto;
-}
-
-hr,
-.instructions,
-.nutrition {
-  margin: 0 auto;
-}
-
-.instructions ol li,
-.nutrition {
-  position: relative;
-}
-
-.description p,
-.instructions ol li {
+.recipe__text,
+.instructions__item {
   line-height: 1.6rem;
 }
 
-.description h1,
-.instructions ol li span.descr {
-  font-weight: 400;
+.recipe__description,
+.recipe__time,
+.recipe__ingredients {
+  margin: auto;
 }
 
-main {
-  width: var(--main-width);
+.recipe__divider,
+.recipe__instructions,
+.recipe__nutrition {
+  margin: 0 auto;
+}
+
+.recipe {
+  width: 48.125rem;
   height: auto;
   margin: 6.25rem auto;
   padding: 0.625rem 0 1.25rem 0;
@@ -84,144 +99,149 @@ main {
   background-color: var(--light-color);
 }
 
-main h1,
-main h2,
-main h3 {
-  font-family: var(--secondary-font);
-}
-
-.omelette-pic {
+.recipe__image {
   display: block;
   margin: 2rem auto 0;
 }
 
-.description h1 {
+.recipe__title {
+  margin-bottom: 0;
   font-size: 2.5rem;
+  color: var(--recipe-title-color);
 }
 
-.description p {
-  margin-bottom: 3rem;
+.recipe__text {
+  margin-bottom: 2.5rem;
 }
 
-.preparation-time {
-  background-color: hsl(330, 100%, 98%);
+.recipe__time {
+  background-color: var(--time-bg-color);
 }
 
-.preparation-time h3 {
+.time__title {
   padding: 1rem 1.5rem 0 1.5rem;
   font-family: var(--primary-font);
-  color: hsl(332, 51%, 32%);
+  font-size: 1.3rem;
+  color: var(--time-color);
 }
 
-.preparation-time ul {
+.time__list {
   padding: 0 0 1.5rem 3.5rem;
 }
 
-.preparation-time ul li {
+.time__item {
   padding-left: 1rem;
 }
 
-.ingredients h2 {
+.ingredients__title {
   margin-bottom: 0;
 }
 
-.ingredients ul {
+.ingredients__list {
   padding: 0 0 1.5rem 1.7rem;
 }
 
-.ingredients ul li {
+.ingredients__item {
   padding-left: 1.5rem;
 }
 
-.instructions ol {
+.instructions__list {
   padding-left: 1.875rem;
   margin-bottom: 2.5rem;
 }
 
-.instructions ol li {
+.instructions__item {
   padding-left: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.nutrition-table {
+.instructions__item::marker {
+  color: var(--heading-color);
+}
+
+.nutrition__table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.nutr-name,
-.nutr-value {
-  padding: 0.9rem 0;
-  border-bottom: 1px solid lightgray;
-}
-
-.nutr-name {
-  padding-left: 2.2rem;
-}
-
-.nutr-value {
-  color: var(--heading-color);
-}
-
-tr{
+.nutrition__row {
   transition: background-color 0.5s;
 }
 
-tr:hover {
-  background-color: rgb(248, 235, 216);
+.nutrition__row:hover {
+  background-color: var(--row-hover-color);
 }
 
-tr:last-child td {
+.nutrition__row:last-child td {
   border-bottom: none;
 }
 
+.nutrition__name,
+.nutrition__value {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--lightgray-color);
+}
+
+.nutrition__name {
+  padding-left: 2.2rem;
+}
+
+.nutrition__value {
+  color: var(--heading-color);
+}
+
 @media screen and (max-width: 800px) {
-  img, section, hr {
+  section, 
+  .recipe__image,
+  .recipe__divider {
     width: 30rem;
   }
 
-  main {
+  .recipe {
     width: 35.625rem;
   }
 
-  .omelette-pic {
+  .recipe__image {
     margin-top: 1.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  img, section, hr {
+  section, 
+  .recipe__image,
+  .recipe__divider {
     width: 25rem;
   }
 
-  main {
+  .recipe {
     width: 30rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .description,
-  .preparation-time,
-  .ingredients,
-  .instructions,
-  hr,
-  .nutrition {
+  .recipe__description,
+  .recipe__time,
+  .recipe__ingredients,
+  .recipe__instructions,
+  .recipe__divider,
+  .recipe__nutrition {
     width: auto;
     margin: 3.125rem;
   }
 
-  main,
-  .omelette-pic {
+  .recipe,
+  .recipe__image {
     width: 100%;
     margin: 0;
     border-radius: 0;
   }
 
-  main {
+  .recipe {
     height: auto;
     padding: 0;
   }
 
-  .nutrition {
+  .recipe__nutrition {
     margin-bottom: 0;
     padding-bottom: 3.125rem;
   }

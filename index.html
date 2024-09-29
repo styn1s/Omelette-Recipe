@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omelette Recipe</title>
     <meta
       name="description"
       content="A simple and quick omelette recipe that's perfect for any meal. Learn how to make a classic omelette with options for fillings like cheese, vegetables, and meats."
@@ -13,117 +12,122 @@
       content="omelette, recipe, easy recipe, cooking, eggs, breakfast"
     />
     <meta name="author" content="Styn1s" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
     />
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Omelette Recipe</title>
   </head>
   <body>
-    <main>
-      <article aria-labelledby="recipe-title">
+    <main class="recipe">
+      <article class="recipe__content" aria-labelledby="recipe-title">
         <img
-          class="omelette-pic"
+          class="recipe__image"
           src="./images/image-omelette.png"
           alt="A delicious omelette on a plate"
           loading="lazy"
         />
-        <section class="description">
-          <h1 id="recipe-title">Simple Omelette Recipe</h1>
-          <p>
+        <section class="recipe__description">
+          <h1 class="recipe__title" id="recipe-title">Simple Omelette Recipe</h1>
+          <p class="recipe__text">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </section>
-        <section class="preparation-time" aria-labelledby="prep-time-heading">
-          <h3 id="prep-time-heading">Preparation time</h3>
-          <ul>
-            <li><span>Total:</span> Approximately 10 minutes</li>
-            <li><span>Preparation:</span> 5 minutes</li>
-            <li><span>Cooking:</span> 5 minutes</li>
+        <section class="recipe__time" aria-labelledby="prep-time-heading">
+          <h2 class="time__title" id="prep-time-heading">Preparation time</h2>
+          <ul class="time__list">
+            <li class="time__item"><span class="time__label">Total:</span> Approximately 10 minutes</li>
+            <li class="time__item"><span class="time__label">Preparation:</span> 5 minutes</li>
+            <li class="time__item"><span class="time__label">Cooking:</span> 5 minutes</li>
           </ul>
         </section>
-        <section class="ingredients" aria-labelledby="ingredients-heading">
-          <h2 id="ingredients-heading">Ingredients</h2>
-          <ul>
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
-            <li>
+        <section class="recipe__ingredients" aria-labelledby="ingredients-heading">
+          <h2 class="ingredients__title" id="ingredients-heading">Ingredients</h2>
+          <ul class="ingredients__list">
+            <li class="ingredients__item">2-3 large eggs</li>
+            <li class="ingredients__item">Salt, to taste</li>
+            <li class="ingredients__item">Pepper, to taste</li>
+            <li class="ingredients__item">1 tablespoon of butter or oil</li>
+            <li class="ingredients__item">
               Optional fillings: cheese, diced vegetables, cooked meats, herbs
             </li>
           </ul>
         </section>
-        <hr />
-        <section class="instructions" aria-labelledby="instructions-heading">
-          <h2 id="instructions-heading">Instructions</h2>
-          <ol>
-            <li>
-              Beat the eggs:<span class="descr">
+
+        <hr class="recipe__divider"/>
+
+        <section class="recipe__instructions" aria-labelledby="instructions__title">
+          <h2 class="instructions__title" id="instructions__title">Instructions</h2>
+          <ol class="instructions__list">
+            <li class="instructions__item">
+              Beat the eggs:<span class="instructions__item-description">
                 In a bowl, beat the eggs with a pinch of salt and pepper until
                 they are well mixed. You can add a tablespoon of water or milk
                 for a fluffier texture.</span
               >
             </li>
-            <li>
-              Heat the pan:<span class="descr">
+            <li class="instructions__item">
+              Heat the pan:<span class="instructions__item-description">
                 Place a non-stick frying pan over medium heat and add butter or
                 oil.</span
               >
             </li>
-            <li>
-              Cook the omelette:<span class="descr">
+            <li class="instructions__item">
+              Cook the omelette:<span class="instructions__item-description">
                 Once the butter is melted and bubbling, pour in the eggs. Tilt
                 the pan to ensure the eggs evenly coat the surface.</span
               >
             </li>
-            <li>
-              Add fillings (optional):<span class="descr">
+            <li class="instructions__item">
+              Add fillings (optional):<span class="instructions__item-description">
                 When the eggs begin to set at the edges but are still slightly
                 runny in the middle, sprinkle your chosen fillings over one half
                 of the omelette.</span
               >
             </li>
-            <li>
-              Fold and serve:<span class="descr">
+            <li class="instructions__item">
+              Fold and serve:<span class="instructions__item-description">
                 As the omelette continues to cook, carefully lift one edge and
                 fold it over the fillings. Let it cook for another minute, then
                 slide it onto a plate.</span
               >
             </li>
-            <li>
-              Enjoy:<span class="descr">
+            <li class="instructions__item">
+              Enjoy:<span class="instructions__item-description">
                 Serve hot, with additional salt and pepper if needed.</span
               >
             </li>
           </ol>
         </section>
-        <hr />
-        <section class="nutrition" aria-labelledby="nutrition-heading">
-          <h2 id="nutrition-heading">Nutrition</h2>
-          <p>
+
+        <hr class="recipe__divider"/>
+
+        <section class="recipe__nutrition" aria-labelledby="nutrition-heading">
+          <h2 class="nutrition__title" id="nutrition-heading">Nutrition</h2>
+          <p class="nutrition__text">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table class="nutrition-table" role="table">
-            <tr>
-              <td class="nutr-name">Calories</td>
-              <td class="nutr-value">277kcal</td>
+          <table class="nutrition__table" role="table">
+            <tr class="nutrition__row">
+              <td class="nutrition__name">Calories</td>
+              <td class="nutrition__value">277kcal</td>
             </tr>
-            <tr>
-              <td class="nutr-name">Carbs</td>
-              <td class="nutr-value">0g</td>
+            <tr class="nutrition__row">
+              <td class="nutrition__name">Carbs</td>
+              <td class="nutrition__value">0g</td>
             </tr>
-            <tr>
-              <td class="nutr-name">Protein</td>
-              <td class="nutr-value">20g</td>
+            <tr class="nutrition__row">
+              <td class="nutrition__name">Protein</td>
+              <td class="nutrition__value">20g</td>
             </tr>
-            <tr id="last-row">
-              <td class="nutr-name" id="fat">Fat</td>
-              <td class="nutr-value" id="weight">22g</td>
+            <tr class="nutrition__row" id="last-row">
+              <td class="nutrition__name" id="fat">Fat</td>
+              <td class="nutrition__value" id="weight">22g</td>
             </tr>
           </table>
         </section>
