@@ -105,7 +105,8 @@ section,
 }
 
 .recipe__title {
-  margin-bottom: 0;
+  width: 42.5rem;
+  margin: 2rem auto 1rem auto;
   font-size: 2.5rem;
   color: var(--recipe-title-color);
 }
@@ -193,6 +194,7 @@ section,
 @media screen and (max-width: 800px) {
   section, 
   .recipe__image,
+  .recipe__title,
   .recipe__divider {
     width: 30rem;
   }
@@ -209,6 +211,7 @@ section,
 @media screen and (max-width: 600px) {
   section, 
   .recipe__image,
+  .recipe__title,
   .recipe__divider {
     width: 25rem;
   }
@@ -239,6 +242,19 @@ section,
   .recipe {
     height: auto;
     padding: 0;
+  }
+
+  .recipe__title {
+    width: auto;
+    margin: 2rem 3.125rem 0;
+  }
+
+  .recipe__text {
+    margin-top: 0;
+  }
+
+  .recipe__description {
+    margin-top: 1rem;
   }
 
   .recipe__nutrition {
